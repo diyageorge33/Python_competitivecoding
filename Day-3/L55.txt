@@ -1,0 +1,9 @@
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        maxi=0
+        for p in nums:
+            if maxi<0:
+                return False
+            elif p>maxi:
+                maxi=p
+            maxi=maxi-1
