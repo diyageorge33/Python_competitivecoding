@@ -1,4 +1,4 @@
-# find minimum,maximum,all type questions-recursion
+
 # def func7(n,count=0):
     
 #     if n==1:
