@@ -15,7 +15,7 @@
 # l.reverse()
 # print(l)
 
-
+#ROTATE TO LEFT K TIMES
 
 l=list(input().split())
 k=int(input("Enter number of rotations:"))
