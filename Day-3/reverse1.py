@@ -1,4 +1,5 @@
 # reverse a list without reverse function- no slicing,no reverse
+
 l=list(input().split())
 print(l)
 # for i in range(0,len(l)+1,1):
