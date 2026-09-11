@@ -10,3 +10,10 @@ class Solution:
                 max_profit=profit
         return max_profit
             
+#kadane's algorithm variation
+        minprice=float('inf')
+        maxprof=0
+        for price in prices:
+            minprice=min(minprice,price)
+            maxprof=max(maxprof,price-minprice)
+        return maxprof

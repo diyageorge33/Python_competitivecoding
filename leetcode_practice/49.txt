@@ -1,0 +1,11 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        dict1={}
+        for ele in strs:
+            a="".join(sorted(ele))
+            if a in dict1:
+                dict1[a]=dict1[a]+[ele]
+            else:
+                dict1[a]=[ele]
+        maxcount=0
+        return list(dict1.values())
