@@ -1,0 +1,13 @@
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        openpara=0
+        closepara=0
+        for i in range(len(s)):
+            if s[i]=='(':
+                openpara=openpara+1
+            elif s[i]==')':
+                if openpara>0:
+                    openpara=openpara-1
+                else:
+                    closepara=closepara+1
+        return openpara+closepara

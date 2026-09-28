@@ -1,0 +1,14 @@
+class Solution:
+    def arrayRankTransform(self, arr: list[int]) -> list[int]:
+        dict1={}
+        final=[]
+        j=1
+        arr2=sorted(arr)
+        
+        for i in arr2:
+            if i not in dict1:
+                dict1[i]=j
+                j=j+1
+        for k in arr:
+            final.append(dict1[k])
+        return final
